@@ -21,7 +21,7 @@ namespace f2
 
         private void connect(object sender, RoutedEventArgs e)
         {
-            connector = new VPNConnector(serverName.Text, "MF", userName.Text, password.Text, Protocol.IKEv2);
+            connector = new VPNConnector(serverName.Text, "MF", userName.Text, password.Text, Protocol.PPTP);
             connector.CreateOrUpdate();
             connector.TryConnect();
         }
